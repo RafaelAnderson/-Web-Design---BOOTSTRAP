@@ -1,0 +1,123 @@
+<html lang="es">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <div class="acerca" style="text-align: center;">
+    <a href="index.html"><img src="images/logo.png" alt="#"></a>
+  </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><font color="white">Point Food</font></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class=""><a href="acerca.html"><font color="white">Inicio</font></a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><font color="white">Contenido</font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="informacion.html">Información</a></li>
+            <li><a href="products.html">Productos</a></li>
+            <li class="active"><a href="trabajadores.html">Trabajadores</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div div class="container">
+    <table id="example" class="table striped table-bordered" style="width:100%">
+      <thead>
+        <tr bgcolor="#21A72D" style="text-align: center;">
+          <th> <font color="white"></font></th>
+          <th> <font color="white">Nombre</font></th>
+          <th> <font color="white">Cargo</font></th>
+          <th> <font color="white">Edad</font></th>
+          <th> <font color="white">Descripción</font></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr bgcolor="" style="text-align: center;">
+          <td><img src="images/ing1.jpg" width="100%" height="100%"></td>
+          <td>Alfonso Lópex López</td>
+          <td>Ingeniero Industrial</td>
+          <td>43</td>
+          <td>Creativo, dinámico y seguro; con capacidad para afrontar y liderar el cambio, dispuesto y motivado a enfrentarse a un medio globalizado y competitivo.</td>
+        </tr>
+
+        <tr bgcolor="" style="text-align: center;">
+          <td><img src="images/ing2.jpg" width="100%" height="100%"></td>
+          <td>Carmen Ortega Pérez</td>
+          <td>Inegnieria Industrial</td>
+          <td>34</td>
+          <td>En búsqueda del mejoramiento continuo y la optimización de los recursos alcanzando la máxima competitividad.</td>
+        </tr>
+
+        <tr bgcolor="" style="text-align: center;">
+          <td><img src="images/ing3.jpg" width="100%" height="100%"></td>
+          <td>José Luis Aguilar</td>
+          <td>Administrador</td>
+          <td>45</td>
+          <td>Se ocupa de realizar la tarea administrativa por medio de la planificación, organización, dirección y control de todas las tareas dentro de un grupo social o de una organización para lograr los objetivos mediante el uso eficiente de los recursos.</td>
+        </tr>
+
+        <tr bgcolor="" style="text-align: center;">
+          <td><img src="images/ing4.jpg" width="100%" height="100%"></td>
+          <td>Eduard Amaya</td>
+          <td>Ingeniero de alimentos</td>
+          <td>34</td>
+          <td>Diseñar procesos y productos y, administrar sistemas de producción alimentaria. Formular y evaluar proyectos de desarrollo alimentario. Formular y ejecutar proyectos de investigación y desarrollo tecnológico. Crear y consolidar empresas alimenticias.</td>
+        </tr>
+
+        <tr  bgcolor="" style="text-align: center;">
+          <td><img src="images/ing5.jpg" width="100%" height="100%"></td>
+          <td>John Juarez Canseco</td>
+          <td>Ingeniero Agrónomo</td>
+          <td>37</td>
+          <td>Maneja y lidera los procesos de producción agrícola de forma individual o interdisciplinaria, bajo principios éticos, procurando el manejo integral, sostenible, competitivo y eficiente.</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr bgcolor="#21A72D" style="text-align: center;">
+          <th> <font color="white"></font></th>
+          <th> <font color="white">Nombre</font></th>
+          <th> <font color="white">Cargo</font></th>
+          <th> <font color="white">Edad</font></th>
+          <th> <font color="white">Descripción</font></th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#example').DataTable({
+        "language": {
+          "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+<style type="text/css">
+  .acerca{
+    background-color: black;
+  }
+  .container-fluid{
+    background-color: #21A72D;
+  }
+  </html>

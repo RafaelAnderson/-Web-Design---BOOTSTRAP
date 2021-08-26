@@ -1,0 +1,180 @@
+<html lang="es">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+	<div class="acerca" style="text-align: center;">
+		<a href="index.html"><img src="images/logo.png" alt="#"></a>
+	</div>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html"><font color="white">Point Food</font></a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="#"><font color="white">Inicio</font></a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><font color="white">Contenido</font><span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="active"><a href="informacion.html">Información</a></li>
+						<li><a href="products.html">Productos</a></li>
+						<li><a href="trabajadores.html">Trabajadores</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div>
+		<p>Una alimentación saludable consiste en ingerir una variedad de alimentos que te brinden los nutrientes que necesitas para mantenerte sana, sentirte bien y tener energía. Estos nutrientes incluyen las proteínas, los carbohidratos, las grasas, el agua, las vitaminas y los minerales. </p>
+
+		<p>La nutrición es importante para todos. Combinada con la actividad física y un peso saludable, la buena alimentación es una forma excelente de ayudar a tu cuerpo a mantenerse fuerte y saludable. Si tienes antecedentes de cáncer de mama o estás en tratamiento, la buena alimentación es especialmente importante para ti. Lo que comes puede influir en tu sistema inmunitario, tu estado de ánimo y tu nivel de energía.</p>
+
+		<p>Ningún alimento o dieta puede impedir la aparición del cáncer de mama. Si bien los investigadores aún están estudiando los efectos de comer alimentos no saludables (en inglés) en el riesgo de tener cáncer de mama y su recurrencia, lo que sí sabemos es que el sobrepeso (en inglés) es un factor de riesgo, tanto de la primera aparición del cáncer de mama como de su recurrencia. En esta sección puedes aprender a comer de una forma que mantenga tu cuerpo lo más sano posible.</p>
+
+		<p>Lee la información sobre los grupos de alimentos, los nutrientes, cómo crear un plan de alimentación saludable, cómo calcular las porciones y cómo disfrutar de los alimentos sin comer de más.</p>
+
+		<p>Datos importantes:</p>
+	</div>
+
+	<div id="cards_landscape_wrap-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<a href="">
+						<div class="card-flyer">
+							<div class="text-box">
+								<div class="image-box">
+									<img src="images/frutas.jpeg" alt="" />
+								</div>
+								<div class="text-container">
+									<h6>Frutas</h6>
+									<p>Su consumo aporta pocas calorías y un alto porcentaje de agua, por lo que facilita la hidratación del organismo. Son además una importante fuente de energía para el organismo por su alto contenido en hidratos de carbono solubles.</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<a href="">
+						<div class="card-flyer">
+							<div class="text-box">
+								<div class="image-box">
+									<img src="images/verduras.jpg" alt="" />
+								</div>
+								<div class="text-container">                                    
+									<h6>Verduras</h6>
+									<p>Las verduras son imprescindibles para nuestra salud. Igual que las frutas, sus vitaminas, antioxidantes, nos protegen de enfermedades. Las verduras son una parte importante de todas las estrategias saludables para adelgazar.</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+<style type="text/css">
+	.acerca{
+		background-color: black;
+	}
+	.container-fluid{
+		background-color: #21A72D;
+	}
+
+	#cards_landscape_wrap-2{
+		text-align: center;
+		background: white;
+	}
+	#cards_landscape_wrap-2 .container{
+		padding-top: 80px; 
+		padding-bottom: 100px;
+	}
+	#cards_landscape_wrap-2 a{
+		text-decoration: none;
+		outline: none;
+	}
+	#cards_landscape_wrap-2 .card-flyer {
+		border-radius: 5px;
+	}
+	#cards_landscape_wrap-2 .card-flyer .image-box{
+		background: #ffffff;
+		overflow: hidden;
+		box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+		border-radius: 5px;
+	}
+	#cards_landscape_wrap-2 .card-flyer .image-box img{
+		-webkit-transition:all .9s ease; 
+		-moz-transition:all .9s ease; 
+		-o-transition:all .9s ease;
+		-ms-transition:all .9s ease; 
+		width: 100%;
+		height: 200px;
+	}
+	#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+		opacity: 0.7;
+		-webkit-transform:scale(1.15);
+		-moz-transform:scale(1.15);
+		-ms-transform:scale(1.15);
+		-o-transform:scale(1.15);
+		transform:scale(1.15);
+	}
+	#cards_landscape_wrap-2 .card-flyer .text-box{
+		text-align: center;
+	}
+	#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+		padding: 30px 18px;
+	}
+	#cards_landscape_wrap-2 .card-flyer{
+		background: #FFFFFF;
+		margin-top: 50px;
+		-webkit-transition: all 0.2s ease-in;
+		-moz-transition: all 0.2s ease-in;
+		-ms-transition: all 0.2s ease-in;
+		-o-transition: all 0.2s ease-in;
+		transition: all 0.2s ease-in;
+		box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+	}
+	#cards_landscape_wrap-2 .card-flyer:hover{
+		background: #fff;
+		box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+		-webkit-transition: all 0.2s ease-in;
+		-moz-transition: all 0.2s ease-in;
+		-ms-transition: all 0.2s ease-in;
+		-o-transition: all 0.2s ease-in;
+		transition: all 0.2s ease-in;
+		margin-top: 50px;
+	}
+	#cards_landscape_wrap-2 .card-flyer .text-box p{
+		margin-top: 10px;
+		margin-bottom: 0px;
+		padding-bottom: 0px; 
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: #000000;
+	}
+	#cards_landscape_wrap-2 .card-flyer .text-box h6{
+		margin-top: 0px;
+		margin-bottom: 4px; 
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: 'Roboto Black', sans-serif;
+		letter-spacing: 1px;
+		color: #00acc1;
+	}
+
+	</html>
