@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="principal">
+  <div class="container">
+    <form action="/action_page.php" style="align-content: center">
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" style="width: 50%">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd"  style="width: 50%">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Archivo:</label>
+        <input type="file" class="form-control" id="ar"  style="width: 50%">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Telefono:</label>
+        <input type="tel" class="form-control" id="tel"  style="width: 50%">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Address:</label>
+        <textarea style="width: 50%" id="add" class="form-control"></textarea>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</body>
+
+<style type="text/css">
+  #principal{
+    background-color: orange;
+  }
+
+  #email, #pwd, #ar, #tel, #add {
+    background-color: yellow;
+  }
+  
+  .btn {
+    background-color: blue;
+    padding: 20px;
+    color: white;
+  }
+  input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+  input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+  }
+  option:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+  }
+
+</style>
+</html>
