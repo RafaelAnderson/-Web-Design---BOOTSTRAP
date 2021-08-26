@@ -1,0 +1,155 @@
+<html lang="es">
+<head>
+	<title>Friki' Store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<center><img src="images/log.png" width="5%"></center>
+	</div>
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#">Friki's Store</a>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown"> Contenido </a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="nosotros.html">Nosotros</a>
+							<ul class="dropdown-menu">
+								<a class="dropdown-item" href="mision.html">Misión</a>
+								<a class="dropdown-item" href="#">Visión</a>
+								<a class="dropdown-item" href="valores.html">Valores</a>
+							</ul>
+						</li>
+						<li><a class="dropdown-item" href="productos.html">Productos</a></li>
+						<li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
+						<li><a class="dropdown-item" href="contactos.html">Contactos</a></li>
+					</ul>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="contacto.html">Contacto<span class="sr-only"></span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<center>
+			<h1>CONTACTO</h1>
+			<br>
+		</center>
+<br>
+		<div class="container">
+			<form class="form-horizontal" action="/action_page.php">
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="pwd">Nombres:</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" placeholder="Nombres"></textarea> 
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="pwd">Apellidos:</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" placeholder="Apellidos"></textarea> 
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="pwd">Edad:</label>
+					<select name="select">
+						<option value="value1">18</option>
+						<option value="value2">19</option>
+						<option value="value3">20</option>
+						<option value="value4">21</option>
+						<option value="value5">22</option>
+						<option value="value6">23</option>
+						<option value="value7">24</option>
+						<option value="value8">25</option>
+						<option value="value9">26</option>
+						<option value="value10">27</option>
+						<option value="value11">28</option>
+						<option value="value12">29</option>
+						<option value="value13">30+</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="email">Email:</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="pwd">Dirección:</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" placeholder="Utiliza el mapa para mayor precisión"></textarea>
+						<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=lima%20peru&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed custom google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="pwd">Mensaje:</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" placeholder="Ingresa un mensaje"></textarea> 
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<div class="checkbox">
+							<label><input type="checkbox"> Recordarme</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-success">Enviar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+</body>
+
+<style type="text/css">
+	.dropdown-submenu{
+		position: relative;
+	}
+	.dropdown-submenu a::after{
+		transform: rotate(-90deg);
+		position: absolute;
+		right: 3px;
+		top: 40%;
+	}
+	.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu{
+		display: flex;
+		flex-direction: column;
+		position: absolute !important;
+		margin-top: -30px;
+		left: 100%;
+	}
+
+	@media (max-width: 992px) {
+		.dropdown-menu{
+			width: 50%;
+		}
+		.dropdown-menu .dropdown-submenu{
+			width: auto;
+		}
+	}
+</style>
+</html>

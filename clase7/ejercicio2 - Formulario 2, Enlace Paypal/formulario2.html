@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<div>
+		<center>
+			<form class="contact_form_inner" id="contactForm" action="contact_me.php" name="sentMessage" novalidate="novalidate">
+				<fieldset>
+					<div class="field">
+						<input type="text" id="name" name="name" placeholder="Nombre" />
+					</div>
+					<div class="field">
+						<input type="email" id="email" name="email" placeholder="Email" style="color: black !important" />
+					</div>
+					<div class="field">
+						<input type="text" id="phone" name="phone" placeholder="Teléfono" />
+					</div>
+					<div class="field">
+						<textarea id="message" name="message" placeholder="Mensaje"></textarea>
+					</div>
+					<div class="field center">
+						<button id="sendMessageButton">ENVIAR</button>
+					</div>
+				</fieldset>
+			</form>
+
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="LHZYTXZW4ZFDE">
+				<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+		</center>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html lang="es">
+<head>
+	<title>Friki' Store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<center><img src="images/log.png" width="5%"></center>
+	</div>
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#">Friki's Store</a>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown"> Contenido </a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Nosotros</a>
+							<ul class="dropdown-menu">
+								<a class="dropdown-item" href="mision.html">Misión</a>
+								<a class="dropdown-item" href="vision.html">Visión</a>
+								<a class="dropdown-item" href="valores.html">Valores</a>
+							</ul>
+						</li>
+						<li><a class="dropdown-item" href="productos.html">Productos</a></li>
+						<li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
+						<li><a class="dropdown-item" href="contactos.html">Contactos</a></li>
+					</ul>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="contacto.html">Contacto<span class="sr-only"></span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<center>
+			<h1>NOSOTROS</h1>
+			<h4><font color="blue">¿Quiénes somos? </font>Somos una empresa dedicada a la comercialización de productos de entretenimiento, de capital 100% peruano, con tiendas físicas en ocho de las principales ciudades del país y con cobertura a nivel nacional mediante nuestra página web</h4>
+			<br>
+			<img src="images/nosotros.jpg" width="70%" >
+			<br>
+			<br>
+			<a href="mision.html"><button type="button" class="btn btn-success">Siguiente</button></a>
+		</center>
+	</div>
+</div>
+
+</body>
+
+<style type="text/css">
+	.dropdown-submenu{
+		position: relative;
+	}
+	.dropdown-submenu a::after{
+		transform: rotate(-90deg);
+		position: absolute;
+		right: 3px;
+		top: 40%;
+	}
+	.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu{
+		display: flex;
+		flex-direction: column;
+		position: absolute !important;
+		margin-top: -30px;
+		left: 100%;
+	}
+
+	@media (max-width: 992px) {
+		.dropdown-menu{
+			width: 50%;
+		}
+		.dropdown-menu .dropdown-submenu{
+			width: auto;
+		}
+	}
+</style>
+</html>

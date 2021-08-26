@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div class="photo">
+		<div class="photo-container">
+			<img src="images/ps11.jpg" alt="" width="100%">
+		</div>
+		<div class="photo-banner">
+			<img src="images/agotado.png" alt="" width="100%">
+		</div>
+	</div>
+
+</body>
+<style type="text/css">
+	.photo {
+		height: 200px;
+		margin: 50px auto;
+		position: relative;
+		width: 200px;
+	}
+	/* Contenedor de la imagen */
+	.photo-container {
+		height: 100%;
+		filter: blur(5px);
+		transition: all .45s ease;
+		width: 100%;
+	}
+	/* Banner de la imagen */
+	.photo .photo-banner {
+		left: 50%;
+		transition: all .45s ease;
+		position: absolute;
+		top: 25px;
+		transform: translateX(-50%);
+	}
+	/* Cuando se haga hover sobre el contenedor */
+	.photo:hover > .photo-container {
+		filter: blur(0);
+	}
+	.photo:hover > .photo-banner {
+		opacity: 0;
+	}
+</style>
+</html>
